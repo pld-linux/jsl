@@ -33,11 +33,9 @@ questionable practices.
 
 %prep
 %setup -q
+find -type f | xargs %undos
 %patch0 -p1
 %patch1 -p1
-
-# Fix DOS-y EOL encoding and permissions
-find -type f | xargs %undos
 
 %build
 # Dependencies dealt with poorly: -j1
