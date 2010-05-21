@@ -16,6 +16,7 @@ Source0:	http://www.javascriptlint.com/download/%{name}-%{version}-src.tar.gz
 Patch0:		smash.patch
 Patch1:		tests.patch
 %{?with_tests:BuildRequires:	perl-base}
+%{?with_tests:BuildRequires:	perl-modules}
 BuildRequires:	rpmbuild(macros) >= 1.553
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
