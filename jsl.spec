@@ -35,8 +35,8 @@ questionable practices.
 %prep
 %setup -q
 find -type f | xargs %undos
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 %build
 # Dependencies dealt with poorly: -j1
